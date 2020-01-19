@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" cotent="ie=edge">
+    <title>CSS selecter4</title>
+    <style>
+        h1:hover {
+            color : red; font-size : 50px;
+        }
+        #daum:active {
+            color : blue; font-size : 50px;
+        }
+        #naver:visited {
+            color : green; font-size : 50px;
+        }
+        input:focus {
+            border : 2px solid red
+        }
+        input:enabled {
+            color : green
+        }
+        input:disabled {
+            color : red
+        }
+        #menu {
+            width : 200px; height : 200px
+        }
+        ol li:nth-child(2n+1) {
+            background-color : red
+        }
+        ol li:nth-child(2n) {
+            background-color : yellow
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello!!</h1>
+    <a id="daum" href="http://www.daum.net">다음</a> <br />
+    <a id="naver" href="http://www.naver.com">네이버</a> <br />
+    <form>
+        아이디 : <input type="text" name="uid" /> <br />
+        비밀번호 : <input type="password" name="pwd" /> <br />
+        닉네임 : <input type="text" name="uname" value="123456" disabled="disabled" /> <br />
+    </form>
+    <br />
+    <div id="menu">
+        <ol>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+        </ol>
+    </div>
+</body>
+</html>

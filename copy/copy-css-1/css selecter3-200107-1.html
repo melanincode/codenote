@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS selector</title>
+    <style>
+        body > div {
+            border : 2px solid black
+        }
+        #cotent p {
+            color : red
+        }
+        h1 ~ p {
+            color : blue
+        }
+        h1 + p {
+            font-size : 50px
+        }
+        </style>
+</head>
+<body>
+    <h1>
+        Hi!
+    </h1>
+    <div>
+        <p>contents</p>
+    </div>
+    <br/>
+        <div id="header">
+            <h1>hello</h1>
+            <h2>hello</h2>
+        </div>
+        <div id="cotent">
+            <h1>content area</h1>
+            <p>it is melanincode</p>
+            <ul>
+                <li><p>menu1</p></li>
+                <li><p>menu2</p></li>
+                <li><p>menu3</p></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <h1>bye</h1>
+        </div>
+        <br/>
+        <h1>hello</h1>
+        <p>content1</p>
+        <p>content2</p>
+        <p>content3</p>
+</body>
+</html>

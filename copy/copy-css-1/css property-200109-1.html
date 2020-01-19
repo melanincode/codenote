@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css property</title>
+    <style>
+        .block {
+            background-color : red;
+            margin-top : 5px;
+            width : 100px;
+            height : 100px;
+        }
+        .inline {
+            background-color : blue;
+            display : inline;
+        }
+        .inline-block {
+            background-color : green;
+            display : inline-block;
+            width : 100px;
+            height : 100px;
+        }
+        .oblock {
+            background-color : red;
+            margin-top : 5px;
+            width : 100px;
+            height : 100px;
+        }
+        .opa :nth-child(1) {
+            opacity : 1.0
+        }
+        .opa :nth-child(2) {
+            opacity : 0.5
+        }
+        .opa :nth-child(3) {
+            opacity : 0.1
+        }
+        .vblock {
+            background-color : red;
+            margin-top : 5px;
+            width : 100px;
+            height : 100px;
+        }
+        .vis :nth-child(2) {
+            opacity : 1.0;
+            visibility : hidden
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="block">block area 1</div>
+    <div class="block">block area 2</div>
+    <div class="block">block area 3</div>
+    <div class="inline">inline area 1</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline">lnline area 2</div>
+    <br />
+    <br />
+    <br />
+    <div class="opa">
+        <div class="oblock">block area 2</div>
+        <div class="oblock">block area 3</div>
+        <div class="oblock">block area 1</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="vis">
+        <div class="vblock">block area 1</div>
+        <div class="vblock">block area 2</div>
+        <div class="vblock">block area 3</div>
+    </div>
+</body>
+</html>

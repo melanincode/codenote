@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta mame="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equive="X-UA-Compatible" content="id=edge">
+    <title>css selecter2</title>
+    <style>
+        #header p {
+            color : red
+        }
+        #footer p {
+            color : blue
+        }
+        ol .even {
+            color : green
+        }
+        ul .even {
+            color : yellow
+        }
+        [type="text"] {
+            color : red
+        }
+        [type="password"] {
+            color : blue
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <p>Header</p>
+    </div>
+    <div id="content">
+        <ol>
+            <li>Menu1</li>
+            <li class="even">Menu1</li>
+            <li>Menu1</li>
+            <li class="even">Menu1</li>
+            <ul class="submenu">
+                <li>Menu1</li>
+                <li class="even">Menu2</li>
+                <li>Menu3</li>
+                <li class="even">Menu4</li>
+            </ul>
+        </ol>
+    </div>
+    <br/>
+    <form>
+        아이디 : <input type="text"><br/>
+        비밀번호 : <input type="password">
+    </form>
+    <div id="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

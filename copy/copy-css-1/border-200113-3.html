@@ -1,0 +1,93 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" contetn="ie=edge">
+    <title>border property</title>
+    <style>
+        div {
+            width : 500px;
+            height : 50px;
+            text-align : center;
+            line-height : 50px;
+            margin-bottom : 10px;
+        }
+        #content1 {
+            border : 3px dashed blue;
+        }
+        #content2 {
+            border-top : 3px solid red;
+            border-right : 3px solid blue;
+            border-bottom : 3px solid green;
+            border-left : 3px solid black;
+        }
+        #solid {border : 5px solid blue}
+        #dashed {border : 5px dashed blue}
+        #dotted {border : 5px dotted blue}
+        #double {border : 5px double blue}
+        #groove {border : 5px groove blue}
+        #inset {border : 5px inset blue}
+        #outset {border : 5px outset blue}
+        #ridge {border : 5px ridge blue}
+        .rad {
+            width : 500px;
+            height : 50px;
+            text-align : center;
+            line-height : 50px;
+            margin-bottom : 10px;
+        }
+        #rad1 {
+            border : 3px solid black
+        }
+        #rad2 {
+            border : 3px solid black;
+            border-radius : 5px;
+        }
+        #rad3 {
+            border : 3px solid black;
+            border-radius : 20px;
+        }
+        #rad4 {
+            border : 3px solid black;
+            border-radius : 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content1">
+        content
+    </div>
+    <div id="content2">
+        content
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div id="solid">solid</div>
+    <div id="dashed">dashed</div>
+    <div id="dotted">dotted</div>
+    <div id="double">double</div>
+    <div id="groove">groove</div>
+    <div id="inset">inset</div>
+    <div id="outset">outset</div>
+    <div id="ridge">ridge</div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="rad">
+        <div id="rad1">
+            radius 적용 안함
+        </div>
+        <div id="rad2">
+            각 모서리 5px 적용
+        </div>
+        <div id="rad3">
+            각 모서리 20px 적용
+        </div>
+        <div id="rad4">
+            각 모서리 50px 적용
+        </div>
+    </div>
+</body>
+</html>

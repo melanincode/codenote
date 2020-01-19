@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form tag</title>
+</head>
+<body>
+    <form action="process/addUser" method="post">
+        <h1>login</h1>
+        <label>id</label> <input type="text" name="id"><br/>
+        <label>password</label> <input type="password" name="password"><br/>
+        <input type="submit" value="join"> 
+    </form>
+    <form action="process/addUser" method="post">
+        <h1>login</h1>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female
+        <input type="submit" value="join">
+    </form>
+    <form action="process/addUser" method="post">
+        <h1>login</h1>
+        <input type="checkbox" name="lan" value="eng">english
+        <input type="checkbox" name="lan" value="kor" checked="checked">korean
+        <input type="checkbox" name="lan" value="jap">japanese
+    </form>
+    <form action="process/addUser" method="post">
+        <h1>login</h1>
+        <input type="file" name="">
+    </form>
+</body>
+</html>
