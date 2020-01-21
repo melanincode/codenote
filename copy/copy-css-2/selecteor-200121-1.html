@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 { color : red; }
+        p { color : blue; }
+        * { color : burlywood; }
+        #p1 { color : yellow; }
+        .p2 { color : aqua; }
+        a[href] { color : brown; }
+        a[target="_blank"] { color : purple; }
+        h1[title~="first"] { color : orange; }
+        p[lang|="en"] { color : pink; }
+        a[href^="https://"] { color : gray; }
+        a[href$=".html"] { color : magenta; }
+        div[class*="test"] { color : salmon; }
+        div p { color : seagreen; }
+        div > h2 { color : gold; }
+        p + ul { color : darkslateblue; }
+        p ~ ul { color : silver; }
+        a:hover { color : sienna; }
+        input:focus { background-color : yellow; }
+        a:link { color : greenyellow; }
+        a:visited { color : darkcyan; }
+        a:active { color : bisque; }
+        input[type=text]:focus,
+        input[type="password"]:focus { color :red; }
+        a:hover { font-weight : bold;}
+        input:enabled + span { color : green; }
+        input:disabled + span { color : goldenrod; text-decoration : line-through; }
+        input:checked + span { color : orchid; }
+        p:first-child { color :red; }
+        p:last-child { color : violet; }
+        ol > li:nth-child(2n) { color : olive; }
+        ol > li:nth-child(2n+1) { color : skyblue; }
+        ol > li:first-child { color : rebeccapurple; }
+        ol > li:last-child { color : firebrick; }
+        ol > li:nth-child(4) { color : forestgreen; }
+        ul > :nth-last-child(2n+1) { color : yellow; }
+        ul > :nth-last-child(2n) { color : navy; }
+        p:first-of-type { color : red; }
+        p:last-of-type { color : blue; }
+        p:nth-of-type(2) { color : green; }
+        p:nth-last-of-type(2) { color : orange; }
+        p:first-child { background : brown;}
+        input:not([type=password]) { background : palevioletred; }
+        input[type="text"]:valid { background-color : greenyellow; }
+        input[type="text"]:invalid { background-color : red; }
+        p::first-letter { font-size : 2em; }
+        p::first-line { color : chartreuse; }
+        h1::before { content : " What "; color : black; }
+        h1::after { content : " Hell "; color : white; }
+        ::selection { color : darkmagenta; background : yellow; }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <div>all</div>
+    <div id="p1">id selector</div>
+    <div class="p2">class selector</div>
+    <a href="www.naver.com">attribute selector</a>
+    <a href="www.google.com" target="_blank">attribute="value" selector</a>
+    <h1 title="heading first">attribute~="value" selector</h1>
+    <p lang="en-us">attribute|="value"</p>
+    <a href="https://www.test.com">attribute^="value"</a>
+    <a href="test.html">attribute$="value"</a>
+    <div class="ok_test">attribute*="value"</div>
+    <div>
+        <p>descendant combinator</p>
+        <h2>child combinator</h2>
+    </div>
+    <p>The first paragraph.</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <input type="text" placeholder="focus me">
+    <input type="password" value="focused">
+    <br/>
+    <input type="radio" checked="checked" value="male" name="gender"> <span>male</span><br/>
+    <input type="radio" value="female" name="gender"> <span>female</span><br/>
+    <input type="radio" value="neuter" name="gender" disabled> <span>neuter</span><hr>
+    
+    <input type="checkbox" checked="checked" value="bicycle"> <span>I have a bicycle</span><br/>
+    <input type="checkbox" value="car"> <span>I have a car</span><br/>
+    <input type="checkbox" value="motorcycle" disabled> <span>I have a motorcycle</span>
+    <p>one-two</p>
+    <ol>
+        <li>Espresso</li>
+        <li>Americano</li>
+        <li>Caffe Latte</li>
+        <li>Caffe Mocha</li>
+        <li>Caramel Latte</li>
+        <li>Cappuccino</li>
+      </ol>
+    
+      <ul>
+        <li>Espresso</li>
+        <li>Americano</li>
+        <li>Caffe Latte</li>
+        <li>Caffe Mocha</li>
+        <li>Caramel Latte</li>
+        <li>Cappuccino</li>
+      </ul>
+
+      <h1>This is a heading</h1>
+  <p>The first paragraph.</p>
+  <p>The second paragraph.</p>
+  <p>The third paragraph.</p>
+  <p>The fourth paragraph.</p>
+  <div>
+    <h1>This is a heading</h1>
+    <p>The first paragraph.</p>
+    <p>The second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>The fourth paragraph.</p>
+  </div>
+  <input type="text" value="text input">
+  <input type="email" value="email input">
+  <input type="password" value="password input">
+  <br/>
+  <label>입력값이 반드시 필요
+    <input type="text" required>
+  </label>
+  <br>
+  <label>특수문자를 포함하지 않는 4자리 문자 또는 숫자
+    <input type="text" value="ab1!"
+      pattern="[a-zA-Z0-9]{4}" required>
+  </label>
+  <br>
+  <label>핸드폰 번호 형식
+    <input type="text" value="010-1111-2222"
+      pattern="^\d{3}-\d{3,4}-\d{4}$" required>
+  </label>
+</body> 
+</html>
